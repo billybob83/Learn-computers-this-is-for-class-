@@ -59,44 +59,6 @@
         <a class="btn" href="https://outlook.office.com/book/learncomputers@VolusiaStudents.onmicrosoft.com/?ismsaljsauthenabled">Book Now</a>
       </div>
 
-      <form class="booking-form card" onsubmit="event.preventDefault(); alert('Thanks! Your lesson request has been submitted.');">
-        <h3>Request a Lesson</h3>
-
-        <label for="name">Your Name</label>
-        <input id="name" name="name" type="text" required placeholder="John Doe" />
-
-        <label for="email">Your Email</label>
-        <input id="email" name="email" type="email" required placeholder="you@example.com" />
-
-        <label for="type">Type of Lesson</label>
-        <select id="type" name="type" required>
-          <option value="" disabled selected>Select a lesson type...</option>
-          <option>Computer Basics</option>
-          <option>Email &amp; Internet</option>
-          <option>Safety &amp; Security</option>
-          <option>File Organization</option>
-          <option>Something Else</option>
-        </select>
-
-        <div class="split" style="margin:0; gap:12px">
-          <div>
-            <label for="date">Preferred Date</label>
-            <input id="date" name="date" type="date" required />
-          </div>
-          <div>
-            <label for="time">Preferred Time</label>
-            <input id="time" name="time" type="time" required />
-          </div>
-        </div>
-
-        <label for="msg">Message (optional)</label>
-        <textarea id="msg" name="message" rows="4" placeholder="Anything specific you'd like to learn?"></textarea>
-
-        <button class="btn" type="submit">Submit Booking</button>
-      </form>
-    </div>
-  </section>
-
   <main class="container">
     <section class="cards">
       <article class="card reveal">
