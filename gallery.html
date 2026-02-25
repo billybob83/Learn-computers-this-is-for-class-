@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gallery · CompSafe</title>
+  <link rel="stylesheet" href="assets/styles.css" />
+  <script src="assets/app.js" defer></script>
+</head>
+<body>
+  <header class="site-header small">
+    <nav class="site-nav" role="navigation" aria-label="Main navigation">
+      <a class="logo" href="index.html">Comp<span>Safe</span></a>
+      <button class="nav-toggle" aria-controls="nav-links" aria-expanded="false" aria-label="Toggle navigation">☰</button>
+      <div class="links" id="nav-links">
+        <a href="basics.html">Basics</a>
+        <a href="safety.html">Online Safety</a>
+        <a href="practices.html">Good Practices</a>
+        <a href="gallery.html">Gallery</a>
+      </div>
+    </nav>
+    <div class="page-hero container">
+      <h1 class="reveal">Gallery</h1>
+      <p class="muted reveal delay-100">Visual recap of key concepts.</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Inline style ensures grid even if your CSS version misses display:grid -->
+    <section class="gallery" style="display:grid">
+      <figure class="reveal">
+        <img src="img/coms.jpg" alt="Login screen on desktop" loading="lazy" />
+        <figcaption>Logging in</figcaption>
+      </figure>
+      <figure class="reveal delay-50">
+        <img src="img/comp.jpg" alt="Parts of a desktop PC labeled" loading="lazy" />
+        <figcaption>Parts of a PC</figcaption>
+      </figure>
+      <figure class="reveal delay-100">
+        <img src="img/dsadsa.jpg" alt="Gaming desktop tower with RGB fans" loading="lazy" />
