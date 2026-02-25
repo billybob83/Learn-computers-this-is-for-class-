@@ -5,43 +5,123 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="color-scheme" content="light dark" />
   <title>Computer Basics & Online Safety · CompSafe</title>
-
-  <!-- Styles -->
   <link rel="stylesheet" href="assets/styles.css" />
-
-  <!-- JavaScript -->
   <script src="assets/app.js" defer></script>
 </head>
-
 <body>
-
-  <!-- HEADER + NAVIGATION -->
   <header class="site-header">
-    <nav class="site-nav" role="navigation" aria-label="Main Navigation">
-
+    <nav class="site-nav" role="navigation" aria-label="Main navigation">
       <a class="logo" href="index.html">Comp<span>Safe</span></a>
-
-      <button class="nav-toggle" aria-controls="nav-links" aria-expanded="false" aria-label="Toggle navigation">
-        ☰
-      </button>
-
+      <button class="nav-toggle" aria-controls="nav-links" aria-expanded="false" aria-label="Toggle navigation">☰</button>
       <div class="links" id="nav-links">
         <a href="basics.html">Basics</a>
         <a href="safety.html">Online Safety</a>
         <a href="practices.html">Good Practices</a>
         <a href="gallery.html">Gallery</a>
-        <a href="https://outlook.office.com/owa/calendar/learncomputers@VolusiaStudents.onmicrosoft.com/bookings/?ismsaljsauthenabled"
-           target="_blank" rel="noopener noreferrer">Book Now</a>
       </div>
     </nav>
 
-    <!-- HERO SECTION -->
     <section class="hero container">
       <div class="hero-copy">
         <h1 class="reveal">Learn Computers. Stay Safe Online.</h1>
         <p class="muted reveal delay-100">
-          Friendly lessons covering hardware, the internet, and everyday digital safety habits.
+          Friendly lessons on hardware, the internet, and everyday security habits—illustrated with real examples.
         </p>
-
         <p class="reveal delay-200">
           <a class="btn" href="basics.html">Start with Basics</a>
+          <a class="btn ghost" href="safety.html">Jump to Safety</a>
+        </p>
+      </div>
+      <figure class="hero-media reveal delay-150">
+        <img src="img/coms.jpg" alt="Computer login screen illustration" />
+        <figcaption class="muted">Getting started: sign in and explore.</figcaption>
+      </figure>
+    </section>
+  </header>
+
+  <!-- BOOKING LESSONS SECTION -->
+  <section class="booking container reveal" id="book-lessons">
+    <h2>Book a Computer Lesson</h2>
+    <p class="muted">
+      Whether you're brand new to computers or want to improve your online safety skills, you can book 1‑on‑1 learning sessions below.
+    </p>
+
+    <div class="booking-grid">
+      <div class="booking-info card">
+        <h3>What You Can Learn</h3>
+        <ul>
+          <li>Computer basics (mouse, keyboard, files)</li>
+          <li>Email &amp; internet browsing</li>
+          <li>Staying safe online</li>
+          <li>Setting up devices</li>
+          <li>Anything you'd like help with!</li>
+        </ul>
+        <a class="btn" href="https://outlook.office.com/book/learncomputers@VolusiaStudents.onmicrosoft.com/?ismsaljsauthenabled">Book Now</a>
+      </div>
+
+      <form class="booking-form card" onsubmit="event.preventDefault(); alert('Thanks! Your lesson request has been submitted.');">
+        <h3>Request a Lesson</h3>
+
+        <label for="name">Your Name</label>
+        <input id="name" name="name" type="text" required placeholder="John Doe" />
+
+        <label for="email">Your Email</label>
+        <input id="email" name="email" type="email" required placeholder="you@example.com" />
+
+        <label for="type">Type of Lesson</label>
+        <select id="type" name="type" required>
+          <option value="" disabled selected>Select a lesson type...</option>
+          <option>Computer Basics</option>
+          <option>Email &amp; Internet</option>
+          <option>Safety &amp; Security</option>
+          <option>File Organization</option>
+          <option>Something Else</option>
+        </select>
+
+        <div class="split" style="margin:0; gap:12px">
+          <div>
+            <label for="date">Preferred Date</label>
+            <input id="date" name="date" type="date" required />
+          </div>
+          <div>
+            <label for="time">Preferred Time</label>
+            <input id="time" name="time" type="time" required />
+          </div>
+        </div>
+
+        <label for="msg">Message (optional)</label>
+        <textarea id="msg" name="message" rows="4" placeholder="Anything specific you'd like to learn?"></textarea>
+
+        <button class="btn" type="submit">Submit Booking</button>
+      </form>
+    </div>
+  </section>
+
+  <main class="container">
+    <section class="cards">
+      <article class="card reveal">
+        <h3>Hardware &amp; Parts</h3>
+        <p>See what each component does and how they work together.</p>
+        <a class="arrow" href="basics.html">Explore Basics →</a>
+      </article>
+
+      <article class="card reveal delay-100">
+        <h3>Online Safety</h3>
+        <p>Spot scams, use strong passwords, and protect your accounts.</p>
+        <a class="arrow" href="safety.html">Stay Safe →</a>
+      </article>
+
+      <article class="card reveal delay-200">
+        <h3>Daily Good Habits</h3>
+        <p>Backups, updates, screen locks, and smarter sharing.</p>
+        <a class="arrow" href="practices.html">Build Habits →</a>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 CompSafe · Learn &amp; Practice</p>
+    <h4>THIS IS NOT A REAL WEBSITE, THIS WAS FOR A CLASS GRADE</h4>
+  </footer>
+</body>
+</html>
